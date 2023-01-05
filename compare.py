@@ -26,7 +26,7 @@ def leven_alg(str_one, str_two):
       if str_one[j - 1] != str_two[i - 1]:
         change += 1
       current_row[j] = min(add, delete, change)
-  return current_row[n]/math.sqrt(len(str_one) ** 2 + len(str_two) ** 2)
+  return current_row[n]/math.sqrt(len(str_one)**2 + len(str_two)**2)
 
 if __name__ == '__main__':
   input, source = sys.argv[1:]
